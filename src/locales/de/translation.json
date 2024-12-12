@@ -1,0 +1,8 @@
+{
+  "logout": "Abmelden",
+  "pageTitle": "Kontoinformationen",
+  "en": "Englisch",
+  "de": "Deutschland",
+  "es": "Spanien",
+  "fetchErr": "Fehler beim Abrufen der Daten. Bitte versuchen Sie es erneut."
+}

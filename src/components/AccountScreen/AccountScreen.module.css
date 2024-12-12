@@ -1,0 +1,117 @@
+:root {
+  --bg-color-white: white;
+  --bg-gradient: linear-gradient(to left, #507299, #003c8f);
+  --text-color-white: white;
+  --text-color-dark: #333;
+  --text-color-light: #555;
+  --border-color: #ccc;
+  --border-color-focus: #4a90e2;
+  --font-size-large: 32px;
+  --font-size-medium: 24px;
+  --font-size-small: 16px;
+  --font-size-extra-small: 14px;
+  --font-weight-bold: bold;
+  --padding-large: 20px;
+  --padding-medium: 10px;
+  --padding-small: 5px;
+  --gap-medium: 15px;
+  --radius-small: 4px;
+  --avatar-size: 40px;
+  --avatar-border-width: 2px;
+  --fetch-loader-width: 300px;
+  --fetch-loader-height: 172px;
+}
+
+.accountContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--bg-color-white);
+}
+
+.accountHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-large) calc(var(--padding-large) * 2);
+  background: var(--bg-gradient);
+  color: var(--text-color-white);
+}
+
+.accountHeader .logo {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+}
+
+.accountHeader .headerRight {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-medium);
+}
+
+.accountHeader .languageSelect {
+  padding: var(--padding-small) var(--padding-medium);
+  font-size: var(--font-size-extra-small);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-small);
+  background: var(--bg-color-white);
+  color: var(--text-color-dark);
+  cursor: pointer;
+}
+
+.accountHeader .languageSelect:focus {
+  outline: none;
+  border-color: var(--border-color-focus);
+}
+
+.accountBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding-large);
+  gap: var(--gap-medium);
+}
+
+.accountBody .userInfo {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--padding-medium);
+}
+
+.logOutBtn {
+  background: none;
+  color: var(--secondary-color);
+  margin-top: 3rem;
+  padding: var(--padding-medium);
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-small);
+  cursor: pointer;
+}
+
+.logOutBtn:hover {
+  background: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--padding-large);
+}
+
+.fetchLoader {
+  width: var(--fetch-loader-width);
+  height: var(--fetch-loader-height);
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 20px;
+}

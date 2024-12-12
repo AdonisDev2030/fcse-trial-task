@@ -1,0 +1,8 @@
+{
+  "logout": "Cerrar sesión",
+  "pageTitle": "Información de la cuenta",
+  "en": "Inglés",
+  "de": "Alemania",
+  "es": "España",
+  "fetchErr": "Error al obtener los datos. Por favor, inténtelo de nuevo."
+}

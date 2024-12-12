@@ -1,0 +1,100 @@
+:root {
+  --primary-color: #4a90e2;
+  --primary-dark-color: #003c8f;
+  --secondary-color: #007bff;
+  --secondary-dark-color: #0056b3;
+  --text-color: white;
+  --background-color: white;
+  --padding: 10px;
+  --border-radius: 4px;
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 24px;
+  --border-color: #ccc;
+  --gap: 4em;
+  --panel-padding: 50px 40px;
+}
+
+.loginContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.leftPanel {
+  flex: 1;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color),
+    var(--primary-dark-color)
+  );
+  color: var(--text-color);
+  text-align: center;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.rightPanel {
+  flex: 1;
+  background: var(--background-color);
+  padding: var(--panel-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rightPanel h2 {
+  margin-bottom: 20px;
+  font-size: var(--font-size-large);
+  font-weight: bold;
+}
+
+.rightPanel .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightPanel .form label {
+  margin-bottom: 5px;
+  font-size: var(--font-size-small);
+}
+
+.rightPanel .form input {
+  margin-bottom: 20px;
+  padding: var(--padding);
+  font-size: var(--font-size-small);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.rightPanel .form .signInBtn {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: var(--padding);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-small);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.rightPanel .form .signInBtn:hover {
+  background-color: var(--secondary-dark-color);
+}
+
+.rightPanel .form .signUpBtn {
+  background: none;
+  color: var(--secondary-color);
+  padding: var(--padding);
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-small);
+  cursor: pointer;
+}
+
+.rightPanel .form .signUpBtn:hover {
+  background: var(--secondary-color);
+  color: var(--text-color);
+}

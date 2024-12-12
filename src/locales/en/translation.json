@@ -1,0 +1,8 @@
+{
+  "logout": "Logout",
+  "pageTitle": "Account Information",
+  "en": "English",
+  "de": "Germany",
+  "es": "Spain",
+  "fetchErr": "Error fetching data. Please try again."
+}
